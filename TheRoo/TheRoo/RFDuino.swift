@@ -1,5 +1,5 @@
 //
-//  Settings.swift
+//  RFDuino.swift
 //  TheRoo
 //
 //  Created by Dami Or on 4/19/16.
@@ -8,11 +8,12 @@
 
 import Foundation
 
-class Settings : UITableViewController {
+class RFDuino : UIViewController {
     
     
     @IBOutlet weak var SidebarButton: UIBarButtonItem!
-     override func viewDidLoad() {
+    
+    override func viewDidLoad() {
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
@@ -21,6 +22,9 @@ class Settings : UITableViewController {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         
-        //TableArray = ["Pulse Rate","Oxygen Level","Sleeping Position","Temperature","Noise Activity","Battery Percentage"]
+        
+        
     }
+    
+    
 }

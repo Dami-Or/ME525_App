@@ -16,6 +16,7 @@
 		F557EC821CC58C4F00CE2435 /* backTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557EC811CC58C4F00CE2435 /* backTableViewController.swift */; };
 		F5585EAA1CC7045F006C753B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5585EA91CC7045F006C753B /* CoreBluetooth.framework */; };
 		F5585EAC1CC70469006C753B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5585EAB1CC70469006C753B /* UIKit.framework */; };
+		F5585EE81CC72FB6006C753B /* RFDuino.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5585EE71CC72FB6006C753B /* RFDuino.swift */; };
 		F574AA791CC6917500AD738F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574AA781CC6917500AD738F /* Login.swift */; };
 		F574AA7B1CC6918000AD738F /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574AA7A1CC6918000AD738F /* Dashboard.swift */; };
 		F574AA7D1CC6918800AD738F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574AA7C1CC6918800AD738F /* Settings.swift */; };
@@ -37,6 +38,7 @@
 		F557EC811CC58C4F00CE2435 /* backTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backTableViewController.swift; sourceTree = "<group>"; };
 		F5585EA91CC7045F006C753B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		F5585EAB1CC70469006C753B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F5585EE71CC72FB6006C753B /* RFDuino.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFDuino.swift; sourceTree = "<group>"; };
 		F574AA781CC6917500AD738F /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F574AA7A1CC6918000AD738F /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		F574AA7C1CC6918800AD738F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				F557EC6B1CC57CF800CE2435 /* AppDelegate.swift */,
 				F557EC6D1CC57CF800CE2435 /* ViewController.swift */,
 				F557EC6F1CC57CF800CE2435 /* Main.storyboard */,
+				F5585EE71CC72FB6006C753B /* RFDuino.swift */,
 				F574AA781CC6917500AD738F /* Login.swift */,
 				F574AA7A1CC6918000AD738F /* Dashboard.swift */,
 				F574AA7C1CC6918800AD738F /* Settings.swift */,
@@ -174,6 +177,7 @@
 				F557EC6E1CC57CF800CE2435 /* ViewController.swift in Sources */,
 				F557EC6C1CC57CF800CE2435 /* AppDelegate.swift in Sources */,
 				F574AA7D1CC6918800AD738F /* Settings.swift in Sources */,
+				F5585EE81CC72FB6006C753B /* RFDuino.swift in Sources */,
 				F574AA7F1CC6919100AD738F /* Tutorial.swift in Sources */,
 				F574AA7B1CC6918000AD738F /* Dashboard.swift in Sources */,
 				F574AA811CC6919700AD738F /* About.swift in Sources */,
