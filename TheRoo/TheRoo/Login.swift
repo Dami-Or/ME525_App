@@ -9,7 +9,44 @@
 import Foundation
 
 class Login : UIViewController {
+    
+    @IBOutlet weak var SidebarButton: UIBarButtonItem!
+    @IBOutlet weak var UserName: UITextField!
+    @IBOutlet weak var Password: UITextField!
+    @IBOutlet weak var Message: UILabel!
+    
+    
     override func viewDidLoad() {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        SidebarButton.target = self.revealViewController()
+        SidebarButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
     }
+
+    @IBAction func SubmitButton(sender: AnyObject) {
+        
+        let user = "Dami"
+        let paswd = "me525"
+        
+        if (UserName.text == user && Password.text == paswd) {
+            
+            Message.text = "Success, Welcome!"
+            UserName.resignFirstResponder()
+            Password.resignFirstResponder()
+            performSegueWithIdentifier("YesLogin", sender: sender)
+           // self.performSegueWithIdentifier("SuccessfulLogin", sender: self)
+            
+        }
+        else {
+            
+            Message.text = "Incorrect Username or Password"
+            UserName.resignFirstResponder()
+            Password.resignFirstResponder()
+        }
+    }
+
+
 }
+ 

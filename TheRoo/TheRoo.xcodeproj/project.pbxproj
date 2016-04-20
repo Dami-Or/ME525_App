@@ -14,6 +14,8 @@
 		F557EC761CC57CF800CE2435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F557EC741CC57CF800CE2435 /* LaunchScreen.storyboard */; };
 		F557EC801CC5875C00CE2435 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F557EC7F1CC5875C00CE2435 /* SWRevealViewController.m */; };
 		F557EC821CC58C4F00CE2435 /* backTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557EC811CC58C4F00CE2435 /* backTableViewController.swift */; };
+		F5585EAA1CC7045F006C753B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5585EA91CC7045F006C753B /* CoreBluetooth.framework */; };
+		F5585EAC1CC70469006C753B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5585EAB1CC70469006C753B /* UIKit.framework */; };
 		F574AA791CC6917500AD738F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574AA781CC6917500AD738F /* Login.swift */; };
 		F574AA7B1CC6918000AD738F /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574AA7A1CC6918000AD738F /* Dashboard.swift */; };
 		F574AA7D1CC6918800AD738F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574AA7C1CC6918800AD738F /* Settings.swift */; };
@@ -33,6 +35,8 @@
 		F557EC7E1CC5875C00CE2435 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F557EC7F1CC5875C00CE2435 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F557EC811CC58C4F00CE2435 /* backTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backTableViewController.swift; sourceTree = "<group>"; };
+		F5585EA91CC7045F006C753B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F5585EAB1CC70469006C753B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F574AA781CC6917500AD738F /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F574AA7A1CC6918000AD738F /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		F574AA7C1CC6918800AD738F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5585EAC1CC70469006C753B /* UIKit.framework in Frameworks */,
+				F5585EAA1CC7045F006C753B /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +60,8 @@
 		F557EC5F1CC57CF800CE2435 = {
 			isa = PBXGroup;
 			children = (
+				F5585EAB1CC70469006C753B /* UIKit.framework */,
+				F5585EA91CC7045F006C753B /* CoreBluetooth.framework */,
 				F557EC6A1CC57CF800CE2435 /* TheRoo */,
 				F557EC691CC57CF800CE2435 /* Products */,
 			);

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,14 +15,48 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE 'ROO" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0K-1G-ujc">
+                                <rect key="frame" x="62" y="50" width="250.5" height="59.5"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="50"/>
+                                <color key="textColor" red="0.96778877619109949" green="0.68128386616615622" blue="0.074964395007072068" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="4" height="4"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nKM-ob-0A8">
+                                <rect key="frame" x="37.5" y="239.5" width="320" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="RBe-ih-OjH"/>
+                                    <constraint firstAttribute="height" constant="188" id="ZwR-tf-Y6h"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Copyright (c) 2016 Dami Orikogbo.All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-bg-SmF">
+                                <rect key="frame" x="21" y="612" width="332" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nKM-ob-0A8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4FE-fV-lO3"/>
+                            <constraint firstItem="nKM-ob-0A8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7Kj-2H-bXQ"/>
+                            <constraint firstItem="l0K-1G-ujc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Doj-fG-LE4"/>
+                            <constraint firstItem="Jmw-bg-SmF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FYI-bQ-hMh"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Jmw-bg-SmF" secondAttribute="bottom" constant="30" id="Ff0-ox-lEE"/>
+                            <constraint firstItem="l0K-1G-ujc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="50" id="Kor-TF-EgS"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-39.5" y="380.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="223" height="332"/>
+    </resources>
 </document>

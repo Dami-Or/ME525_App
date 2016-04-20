@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var Label: UILabel!
-    @IBOutlet var OpenButton: UIBarButtonItem!
+    //@IBOutlet var OpenButton: UIBarButtonItem!
+    @IBOutlet var SidebarButton: UIBarButtonItem!
     
     var varView = Int()
     
@@ -19,8 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        OpenButton.target = self.revealViewController()
-        OpenButton.action = Selector("revealToggle:")
+        SidebarButton.target = self.revealViewController()
+        SidebarButton.action = #selector(SWRevealViewController.revealToggle(_:))
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         if (varView == 0){

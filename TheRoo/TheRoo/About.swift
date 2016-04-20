@@ -9,7 +9,19 @@
 import Foundation
 
 class About : UIViewController {
+    
+    
+    @IBOutlet weak var SidebarButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
+        
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        SidebarButton.target = self.revealViewController()
+        SidebarButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+   
     }
+    
+    
 }
