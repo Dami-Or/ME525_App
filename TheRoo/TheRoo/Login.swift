@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Login : UIViewController {
     
@@ -35,8 +36,9 @@ class Login : UIViewController {
             Message.text = "Success, Welcome!"
             UserName.resignFirstResponder()
             Password.resignFirstResponder()
-            performSegueWithIdentifier("YesLogin", sender: sender)
-           // self.performSegueWithIdentifier("SuccessfulLogin", sender: self)
+            performSegueWithIdentifier("SuccessfulLogin", sender: sender)
+            //self.view.window?.rootViewController = RFDuino()
+            
             
             
         }

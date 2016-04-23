@@ -7,13 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 class RFDuino : UIViewController {
     
     
     @IBOutlet weak var SidebarButton: UIBarButtonItem!
+    //@IBOutlet weak var duinoButton: UIButton!
+    @IBOutlet weak var duinoButton: UIBarButtonItem!
     
-    override func viewDidLoad() {
+    
+       override func viewDidLoad() {
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
@@ -22,9 +26,21 @@ class RFDuino : UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         
+        duinoButton.target = self.revealViewController()
+        duinoButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        //self.performSegueWithIdentifier("SuccessfulLogin", sender: self)
+        _ = self.storyboard?.instantiateViewControllerWithIdentifier("RFDuino") as? UIViewController!
+        self.view.window?.rootViewController = RFDuino()
         
         
     }
     
     
-}
+    
+    
+    
+    
+    
+   }

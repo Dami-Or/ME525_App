@@ -22,6 +22,9 @@
 		F574AA7D1CC6918800AD738F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574AA7C1CC6918800AD738F /* Settings.swift */; };
 		F574AA7F1CC6919100AD738F /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574AA7E1CC6919100AD738F /* Tutorial.swift */; };
 		F574AA811CC6919700AD738F /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = F574AA801CC6919700AD738F /* About.swift */; };
+		F57D65931CC89544008DE627 /* Vitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D65921CC89544008DE627 /* Vitals.swift */; };
+		F57D65951CC93464008DE627 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57D65941CC93464008DE627 /* MediaPlayer.framework */; };
+		F57D65971CC935A0008DE627 /* VID_20160420_211406503.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F57D65961CC935A0008DE627 /* VID_20160420_211406503.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		F574AA7C1CC6918800AD738F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F574AA7E1CC6919100AD738F /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		F574AA801CC6919700AD738F /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		F57D65921CC89544008DE627 /* Vitals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vitals.swift; sourceTree = "<group>"; };
+		F57D65941CC93464008DE627 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F57D65961CC935A0008DE627 /* VID_20160420_211406503.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = VID_20160420_211406503.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57D65951CC93464008DE627 /* MediaPlayer.framework in Frameworks */,
 				F5585EAC1CC70469006C753B /* UIKit.framework in Frameworks */,
 				F5585EAA1CC7045F006C753B /* CoreBluetooth.framework in Frameworks */,
 			);
@@ -62,8 +69,7 @@
 		F557EC5F1CC57CF800CE2435 = {
 			isa = PBXGroup;
 			children = (
-				F5585EAB1CC70469006C753B /* UIKit.framework */,
-				F5585EA91CC7045F006C753B /* CoreBluetooth.framework */,
+				F57D65911CC875E8008DE627 /* Frameworks */,
 				F557EC6A1CC57CF800CE2435 /* TheRoo */,
 				F557EC691CC57CF800CE2435 /* Products */,
 			);
@@ -80,24 +86,52 @@
 		F557EC6A1CC57CF800CE2435 /* TheRoo */ = {
 			isa = PBXGroup;
 			children = (
+				F557EC6F1CC57CF800CE2435 /* Main.storyboard */,
 				F557EC6B1CC57CF800CE2435 /* AppDelegate.swift */,
 				F557EC6D1CC57CF800CE2435 /* ViewController.swift */,
-				F557EC6F1CC57CF800CE2435 /* Main.storyboard */,
 				F5585EE71CC72FB6006C753B /* RFDuino.swift */,
 				F574AA781CC6917500AD738F /* Login.swift */,
 				F574AA7A1CC6918000AD738F /* Dashboard.swift */,
 				F574AA7C1CC6918800AD738F /* Settings.swift */,
+				F57D65921CC89544008DE627 /* Vitals.swift */,
 				F574AA7E1CC6919100AD738F /* Tutorial.swift */,
 				F574AA801CC6919700AD738F /* About.swift */,
-				F557EC811CC58C4F00CE2435 /* backTableViewController.swift */,
-				F557EC7E1CC5875C00CE2435 /* SWRevealViewController.h */,
-				F557EC7F1CC5875C00CE2435 /* SWRevealViewController.m */,
+				F57D65961CC935A0008DE627 /* VID_20160420_211406503.mp4 */,
+				F57D65901CC875CC008DE627 /* RFDuino */,
+				F57D658F1CC87595008DE627 /* SWReveal */,
 				F557EC721CC57CF800CE2435 /* Assets.xcassets */,
 				F557EC741CC57CF800CE2435 /* LaunchScreen.storyboard */,
 				F557EC771CC57CF800CE2435 /* Info.plist */,
 				F557EC7D1CC5875B00CE2435 /* TheRoo-Bridging-Header.h */,
 			);
 			path = TheRoo;
+			sourceTree = "<group>";
+		};
+		F57D658F1CC87595008DE627 /* SWReveal */ = {
+			isa = PBXGroup;
+			children = (
+				F557EC811CC58C4F00CE2435 /* backTableViewController.swift */,
+				F557EC7F1CC5875C00CE2435 /* SWRevealViewController.m */,
+				F557EC7E1CC5875C00CE2435 /* SWRevealViewController.h */,
+			);
+			name = SWReveal;
+			sourceTree = "<group>";
+		};
+		F57D65901CC875CC008DE627 /* RFDuino */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RFDuino;
+			sourceTree = "<group>";
+		};
+		F57D65911CC875E8008DE627 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F57D65941CC93464008DE627 /* MediaPlayer.framework */,
+				F5585EA91CC7045F006C753B /* CoreBluetooth.framework */,
+				F5585EAB1CC70469006C753B /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +196,7 @@
 				F557EC761CC57CF800CE2435 /* LaunchScreen.storyboard in Resources */,
 				F557EC731CC57CF800CE2435 /* Assets.xcassets in Resources */,
 				F557EC711CC57CF800CE2435 /* Main.storyboard in Resources */,
+				F57D65971CC935A0008DE627 /* VID_20160420_211406503.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +217,7 @@
 				F574AA7B1CC6918000AD738F /* Dashboard.swift in Sources */,
 				F574AA811CC6919700AD738F /* About.swift in Sources */,
 				F557EC801CC5875C00CE2435 /* SWRevealViewController.m in Sources */,
+				F57D65931CC89544008DE627 /* Vitals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
