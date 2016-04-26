@@ -13,6 +13,8 @@ class About : UIViewController {
     
     
     @IBOutlet weak var SidebarButton: UIBarButtonItem!
+    @IBOutlet weak var textView: UITextView!
+    
     
     override func viewDidLoad() {
         
@@ -21,6 +23,8 @@ class About : UIViewController {
         SidebarButton.target = self.revealViewController()
         SidebarButton.action = #selector(SWRevealViewController.revealToggle(_:))
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        self.textView.scrollRangeToVisible(NSMakeRange(0, 10))
    
     }
     
